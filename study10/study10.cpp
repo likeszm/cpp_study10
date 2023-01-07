@@ -16,9 +16,7 @@ std::string  debug_info;
 class Box_class
 {
 public:             //公有成员
-    double length;
-    double breadth;
-    double height;
+    double length, breadth, height;
 
     double get_info(void);
     void set_size(double x, double y, double z);
@@ -34,13 +32,14 @@ public:             //公有成员
     void set_last_api_private(double x, double y, double z);
     void get_last_info(void);
     double set_last_volume(double v);
+
 protected:          //受保护成员
     void set_last_data_protected(double x , double y, double z);
     double last_volume;
+
 private:            //私有成员
-    double last_length;
-    double last_breadth;
-    double last_height;
+    double last_length, last_breadth, last_height;
+
     void set_last_data_private(double x, double y, double z);
 };
 
